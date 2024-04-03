@@ -1,0 +1,126 @@
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.page-name {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-style: normal;
+  align-content: center;
+  font-size: xx-large;
+}
+
+.topheader {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  min-height: 6rem;
+  background-color: cornsilk;
+  padding-left: 4rem;
+  padding-right: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #e28743;
+}
+
+.topheader img {
+  width: 100px;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border-color: #e28743;
+  border-width: 1px;
+  color: #e28743;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 7px;
+  width: 10rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: #e28743;
+  color: aliceblue;
+  font-weight: bold;
+  border: none;
+
+  transition: 0.6s;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  color: cornsilk;
+  background-color: #69544b;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  width: 100%;
+  list-style: none;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navigation a:hover,
+.dropdown:hover .dropbtn .dropdown {
+  background-color: #e28743;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+.starters-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.starters-content a {
+  float: none;
+  color: #69544b;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.starters-content a:hover {
+  background-color: cornsilk;
+}
+
+.dropdown:hover .starters-content {
+  display: block;
+}
