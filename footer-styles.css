@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  justify-content: center;
+
+}
+
+.footer-logo img {
+  width: 5em;
+  height: 5em;
+}
