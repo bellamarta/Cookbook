@@ -18,7 +18,7 @@ header {
   align-content: center;
   width: 100%;
   min-height: 6rem;
-  background-color: cornsilk;
+  /* background-color: cornsilk; */
   padding-left: 4rem;
   padding-right: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -37,8 +37,8 @@ button {
   color: #e28743;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   border-radius: 7px;
   width: 10rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -118,7 +118,8 @@ button:hover {
 }
 
 .starters-content a:hover {
-  background-color: cornsilk;
+  background-color: #e28743;
+  color: white;
 }
 
 .dropdown:hover .starters-content {
