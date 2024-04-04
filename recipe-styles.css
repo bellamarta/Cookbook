@@ -76,4 +76,29 @@
       }
     }
   }
+
+  & .recipe-img {
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 35rem;
+    max-height: 35rem;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 200px;
+    overflow: hidden;
+    border: white 1rem solid;
+    filter: drop-shadow(2px 2px 5px #7d7d7d);
+    @media screen and (min-width: 1024px) {
+      right: unset;
+      left: 32%;
+    }
+    & img {
+      width: 110%;
+      height: 110%;
+      object-fit: cover;
+    }
+  }
 }
