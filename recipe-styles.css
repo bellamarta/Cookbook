@@ -1,0 +1,13 @@
+.recipe-page__backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url("./images/bkg_recipe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2;
+}
