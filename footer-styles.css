@@ -7,19 +7,22 @@
   /* margin: 1em; */
 }
 
-.footer-logo , .contact-us , .about-us , .newsletter{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      /* border: 1px solid; */
-      height: 100%;
-      width: 100%;
-      padding: 1em;
-        line-height: 2em;
+.footer-logo,
+.contact-us,
+.about-us,
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid; */
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+  line-height: 2em;
 }
 
-.about-us a:hover{
+.about-us a:hover {
   font-size: 1.5em;
 }
 
@@ -28,18 +31,17 @@
   height: 5em;
 }
 
-.contact-us svg:hover{
+.contact-us svg:hover {
   width: 4em;
   height: 4em;
 }
 
-.newsletter label{
+.newsletter label {
   font-size: medium;
 }
 
-.newsletter button{
+.newsletter button {
   cursor: pointer;
-  
 }
 .newsletter button:hover {
   size: 3em;
