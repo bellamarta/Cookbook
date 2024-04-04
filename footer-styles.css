@@ -3,12 +3,32 @@
     color: cornsilk;
   width: 100%;
   display: grid;
+  grid-template-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   align-items: start;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
       font-size: medium;
-  }
+      padding: 2rem;
+
+      @media screen and (576px < width < 768px) {
+          grid-template-columns: 1fr 1fr;
+          padding: 2rem;
+          margin: 2rem;
+          background-color: #7e391b;
+        }
+            @media screen and (0px < width < 576px) {
+              grid-template-columns: 1fr;
+              padding: 2rem;
+              margin: 2rem;
+              background-color: #545806;
+            }
+      /* @media screen and (min-width: 768px) {
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          font-size: larger;
+        }  */
+    }
+
 
 .footer-logo,
 .contact-us,
