@@ -5,16 +5,30 @@
   z-index: 0;
   width: 100vw;
   min-height: 100vh;
+
   background-image: url("./images/bkg_recipe.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.2;
+  background-position: top center;
+
+  opacity: 0.5;
+
+  & .overlay {
+    background: fuchsia;
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(172, 156, 148);
+    background: linear-gradient(
+      0deg,
+      rgba(123, 115, 111, 1) 0%,
+      rgba(123, 115, 111, 0) 100%
+    );
+  }
 }
 
 .recipe-page__body {
   overflow-x: hidden;
-  background: #73676787;
+  background: rgb(123, 115, 111);
 }
 
 .recipe-page {
@@ -103,7 +117,7 @@
     height: 50vw;
     border-radius: 200px;
     overflow: hidden;
-    border: #e28743 1rem solid;
+    border: white 1rem solid;
     filter: drop-shadow(2px 2px 5px #7d7d7d);
     @media screen and (min-width: 1024px) {
       right: unset;
