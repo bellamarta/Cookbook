@@ -14,12 +14,13 @@
       @media screen and (576px < width < 768px) {
           grid-template-columns: 1fr 1fr;
           padding: 2rem;
-          background-color: #7e391b;
+
+          background-color: #69544b;
         }
             @media screen and (0px < width < 576px) {
               grid-template-columns: 1fr;
               padding: 2rem;
-              background-color: #545806;
+              background-color: #69544b;
             }
       /* @media screen and (min-width: 768px) {
           grid-template-columns: 1fr 1fr 1fr 1fr;
