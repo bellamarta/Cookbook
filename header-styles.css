@@ -14,37 +14,69 @@ header {
 
 .topheader {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  flex-direction: column;
   width: 100%;
-  min-height: 6rem;
-  /* background-color: cornsilk; */
-  padding-left: 4rem;
-  padding-right: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #e28743;
+  min-height: 3rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: 6rem;
+    padding-left: 4rem;
+    padding-right: 2rem;
+  }
 }
 
-.topheader img {
+.topheader-img img {
   width: 100px;
   height: auto;
 }
 
+.topheader-img,
+.page-name,
+.CTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
-  background-color: transparent;
+  background-color: #e28743;
   border-color: #e28743;
   border-width: 1px;
-  color: #e28743;
+  color: white;
   font-size: 1rem;
   font-weight: bold;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   border-radius: 7px;
-  width: 10rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700;
-  margin-top: 2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  width: 10rem;
+
+  @media all and (min-width: 768px) {
+    background-color: transparent;
+    border-color: #e28743;
+    border-width: 1px;
+    color: #e28743;
+    width: 10rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
 }
 
 button:hover {
@@ -52,7 +84,7 @@ button:hover {
   color: aliceblue;
   font-weight: bold;
   border: none;
-  transition: 0.6s;
+  transition: 0.5s;
 }
 
 .navigation {
@@ -129,7 +161,7 @@ button:hover {
 .drop-content-desserts a:hover {
   background-color: #e28743;
   color: white;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 
 .navigation .nav-item:hover .drop-content-starters,
