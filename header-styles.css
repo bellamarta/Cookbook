@@ -52,12 +52,12 @@ button:hover {
   color: aliceblue;
   font-weight: bold;
   border: none;
-
   transition: 0.6s;
 }
 
 .navigation {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
   color: cornsilk;
@@ -73,34 +73,37 @@ button:hover {
   overflow: hidden;
 }
 
-.dropdown {
+.nav-item {
   float: left;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.dropdown .dropbtn {
+.nav-item {
   border: none;
   outline: none;
   color: white;
-  padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
 .navigation a:hover,
-.dropdown:hover .dropbtn .dropdown {
+.nav-item:hover .dropbtn .nav-item {
   background-color: #e28743;
+  transition: 0.6s;
 }
 
 .navigation a {
   text-decoration: none;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1.5rem 1.5rem;
 }
 
-.starters-content {
+.drop-content-starters,
+.drop-content-salads,
+.drop-content-main,
+.drop-content-desserts {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -109,7 +112,10 @@ button:hover {
   z-index: 1;
 }
 
-.starters-content a {
+.drop-content-starters a,
+.drop-content-salads a,
+.drop-content-main a,
+.drop-content-desserts a {
   float: none;
   color: #69544b;
   text-decoration: none;
@@ -117,11 +123,18 @@ button:hover {
   text-align: left;
 }
 
-.starters-content a:hover {
+.drop-content-starters a:hover,
+.drop-content-salads a:hover,
+.drop-content-main a:hover,
+.drop-content-desserts a:hover {
   background-color: #e28743;
   color: white;
+  transition: 0.3s;
 }
 
-.dropdown:hover .starters-content {
+.navigation .nav-item:hover .drop-content-starters,
+.navigation .nav-item:hover .drop-content-salads,
+.navigation .nav-item:hover .drop-content-main,
+.navigation .nav-item:hover .drop-content-desserts {
   display: block;
 }
