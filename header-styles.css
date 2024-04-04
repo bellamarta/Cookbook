@@ -78,11 +78,10 @@ button:hover {
   /* overflow: hidden; */
 }
 
-.nav-item .dropstarters {
+.nav-item {
   border: none;
   outline: none;
   color: white;
-  padding: 1.5rem 1.5rem;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -101,7 +100,10 @@ button:hover {
   padding: 1.5rem 1.5rem;
 }
 
-.drop-content-starters {
+.drop-content-starters,
+.drop-content-salads,
+.drop-content-main,
+.drop-content-desserts {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -110,7 +112,10 @@ button:hover {
   z-index: 1;
 }
 
-.drop-content-starters a {
+.drop-content-starters a,
+.drop-content-salads a,
+.drop-content-main a,
+.drop-content-desserts a {
   float: none;
   color: #69544b;
   text-decoration: none;
@@ -118,12 +123,18 @@ button:hover {
   text-align: left;
 }
 
-.drop-content-starters a:hover {
+.drop-content-starters a:hover,
+.drop-content-salads a:hover,
+.drop-content-main a:hover,
+.drop-content-desserts a:hover {
   background-color: #e28743;
   color: white;
   transition: 0.3s;
 }
 
-.nav-item:hover .drop-content-starters {
+.navigation .nav-item:hover .drop-content-starters,
+.navigation .nav-item:hover .drop-content-salads,
+.navigation .nav-item:hover .drop-content-main,
+.navigation .nav-item:hover .drop-content-desserts {
   display: block;
 }
