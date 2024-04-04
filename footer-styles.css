@@ -16,6 +16,7 @@
       height: 100%;
       width: 100%;
       padding: 1em;
+        line-height: 2em;
 }
 
 .about-us a:hover{
@@ -23,7 +24,6 @@
 }
 
 .footer-logo img {
-
   width: 5em;
   height: 5em;
 }
@@ -31,4 +31,16 @@
 .contact-us svg:hover{
   width: 4em;
   height: 4em;
+}
+
+.newsletter label{
+  font-size: medium;
+}
+
+.newsletter button{
+  cursor: pointer;
+  
+}
+.newsletter button:hover {
+  size: 3em;
 }
