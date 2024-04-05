@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./subscribe.js" defer></script>
+    <script src="./newsletter.js" defer></script>
     <title>Cookbook</title>
   </head>
 
@@ -246,6 +247,7 @@
               id="fname"
               name="fname"
               placeholder="First Name"
+              required
             /><br />
             <label for="lname">Email Address:</label><br />
             <input
@@ -253,11 +255,10 @@
               id="email"
               name="email"
               placeholder="Your Email.."
+              required
             /><br />
-            <button class="news-button">Sign Up</button>
+            <button class="news-button" onclick="newsletter()">Sign Up</button>
           </form>
-
-          <p>By signing up, you agree to COOK's Privacy Notice and T&Cs.</p>
         </div>
       </div>
     </footer>
