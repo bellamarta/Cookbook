@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="./subscribe.js" defer></script>
+    <script src="./newsletter.js" defer></script>
     <title>Cookbook</title>
   </head>
 
@@ -111,7 +112,8 @@
 
       <div class="footer">
         <div class="footer-logo">
-          <img src="./images/logo.png" alt="icon" />
+          
+          <a href="./index.html"><img src="./images/logo.png" alt="icon" /></a>
           <h3>Finest Indian Kitchen</h3>
           <!--  the name of blog -->
           <p>Germany</p>
@@ -245,6 +247,7 @@
               id="fname"
               name="fname"
               placeholder="First Name"
+              required
             /><br />
             <label for="lname">Email Address:</label><br />
             <input
@@ -252,11 +255,10 @@
               id="email"
               name="email"
               placeholder="Your Email.."
+              required
             /><br />
-            <button class="news-button">Sign Up</button>
+            <button class="news-button" onclick="newsletter()">Sign Up</button>
           </form>
-
-          <p>By signing up, you agree to COOK's Privacy Notice and T&Cs.</p>
         </div>
       </div>
     </footer>
