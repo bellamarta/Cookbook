@@ -45,6 +45,7 @@
   }
 
   & .main {
+    overflow-x: hidden;
     position: relative;
     z-index: 1;
     padding: 2rem 0;
