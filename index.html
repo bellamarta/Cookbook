@@ -9,13 +9,24 @@
       rel="stylesheet"
       href=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     />
+
+    <!--
     <link
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     />
+-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
     <script src="./subscribe.js" defer></script>
     <script src="./newsletter.js" defer></script>
+    <script src="./mobilenav.js" defer></script>
     <title>Cookbook</title>
   </head>
 
@@ -33,11 +44,11 @@
         </div>
       </div>
 
-      <nav class="navigation">
+      <nav class="navigation" id="navigation">
         <div class="nav-item">
           <a class="dropbtn" href="#">Starters</a>
 
-          <div class="drop-content-starters">
+          <div class="drop-content drop-content-starters">
             <a href="recipes/aloo-chaat.html">Aloo Chaat</a>
             <a href="recipes/paneer-pakora.html">Paneer Pakora</a>
             <a href="recipes/samosas.html">Samosas</a>
@@ -46,7 +57,7 @@
 
         <div class="nav-item">
           <a class="dropbtn" href="#">Salads</a>
-          <div class="drop-content-salads">
+          <div class="drop-content drop-content-salads">
             <a href="recipes/kakdi-koshimbir.html">Kakdi Koshimbir</a>
             <a href="recipes/sprouted-moong-salad.html">Sprouted Moong Salad</a>
             <a href="recipes/boiled-peanut-salad.html">Boiled Peanut Salad</a>
@@ -55,7 +66,7 @@
 
         <div class="nav-item">
           <a class="dropbtn" href="#">Main Courses</a>
-          <div class="drop-content-main">
+          <div class="drop-content drop-content-main">
             <a href="recipes/chickpea-tikka-masala.html"
               >Chickpea Tikka Masala</a
             >
@@ -66,7 +77,7 @@
         </div>
         <div class="nav-item">
           <a class="dropbtn" href="#">Desserts</a>
-          <div class="drop-content-desserts">
+          <div class="drop-content drop-content-desserts">
             <a href="recipes/gulab-jamun.html">Gulab Jamun</a>
             <a href="recipes/milk-powder-burfi.html">Milk Powder Burfi</a>
             <a href="recipes/peanut-ladoo.html">Peanut Ladoo</a>
@@ -76,6 +87,22 @@
           <a class="dropbtn" href="#">Inspire Me</a>
         </div>
       </nav>
+
+      <span class="nav-toggle" id="navToggle" role="button">
+        <svg
+          height="1em"
+          viewBox="0 0 16 16"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M8 4.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M9.5 8a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0 5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"
+            fill="currentColor"
+            fill-rule="evenodd"
+          />
+        </svg>
+      </span>
     </header>
 
     <main>

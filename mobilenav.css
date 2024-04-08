@@ -1,0 +1,55 @@
+.nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .topheader {
+    padding: 0 0 2rem 0;
+    border-bottom: #69544b 1rem solid;
+  }
+
+  .navigation {
+    position: absolute;
+    top: 18.5rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    gap: 0;
+    flex-direction: column;
+    display: none;
+    transition: all 0.2s ease-in-out;
+    & a {
+      display: block;
+    }
+    &.is-open {
+      display: flex;
+    }
+  }
+
+  .nav-item,
+  .nav-item-inspire {
+    border-bottom: white 1px solid;
+  }
+
+  .drop-content {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    color: #69544b99;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    & svg {
+      font-size: 2rem;
+    }
+  }
+}
