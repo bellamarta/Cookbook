@@ -17,6 +17,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../subscribe.js" defer></script>
+    <script src="../mobilenav.js" defer></script>
   </head>
   <body class="recipe-page__body">
     <div class="recipe-page d-flex flex-column">
@@ -31,12 +32,11 @@
             <button>Subscribe here!</button>
           </div>
         </div>
-
-        <nav class="navigation">
+        <nav class="navigation" id="navigation">
           <div class="nav-item">
             <a class="dropbtn" href="#">Starters</a>
 
-            <div class="drop-content-starters">
+            <div class="drop-content drop-content-starters">
               <a href="aloo-chaat.html">Aloo Chaat</a>
               <a href="paneer-pakora.html">Paneer Pakora</a>
               <a href="samosas.html">Samosas</a>
@@ -45,7 +45,7 @@
 
           <div class="nav-item">
             <a class="dropbtn" href="#">Salads</a>
-            <div class="drop-content-salads">
+            <div class="drop-content drop-content-salads">
               <a href="kakdi-koshimbir.html">Kakdi Koshimbir</a>
               <a href="sprouted-moong-salad.html">Sprouted Moong Salad</a>
               <a href="boiled-peanut-salad.html">Boiled Peanut Salad</a>
@@ -54,7 +54,7 @@
 
           <div class="nav-item">
             <a class="dropbtn" href="#">Main Courses</a>
-            <div class="drop-content-main">
+            <div class="drop-content drop-content-main">
               <a href="chickpea-tikka-masala.html">Chickpea Tikka Masala</a>
               <a href="keema-aloo.html">Keema Aloo</a>
               <a href="tandori-chicken.html">Tandoori Chicken</a>
@@ -63,7 +63,7 @@
           </div>
           <div class="nav-item">
             <a class="dropbtn" href="#">Desserts</a>
-            <div class="drop-content-desserts">
+            <div class="drop-content drop-content-desserts">
               <a href="gulab-jamun.html">Gulab Jamun</a>
               <a href="milk-powder-burfi.html">Milk Powder Burfi</a>
               <a href="peanut-ladoo.html">Peanut Ladoo</a>
@@ -73,6 +73,22 @@
             <a class="dropbtn" href="#">Inspire Me</a>
           </div>
         </nav>
+
+        <span class="nav-toggle" id="navToggle" role="button">
+          <svg
+            height="1em"
+            viewBox="0 0 16 16"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              clip-rule="evenodd"
+              d="M8 4.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3M9.5 8a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0m0 5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0"
+              fill="currentColor"
+              fill-rule="evenodd"
+            />
+          </svg>
+        </span>
       </header>
 
       <main class="main recipe-page__main flex-grow-1">
